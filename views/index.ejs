@@ -9,11 +9,11 @@
     <body>
         <div id='wrapper'>
             <h1>Counter</h1>
-            <p>COUNTER PLACEHOLDER</p>
+            <p><%=locals.sesscount%></p>
             <form action='/plus2' method='POST'>
                 <input id='plus2' type='submit' value='Add 2 to counter'>
             </form>
-            <form action='reset'>
+            <form action='reset' method='POST'>
                 <input id='reset' type='submit' value='Reset'>
             </form>
         </div>
